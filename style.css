@@ -1,0 +1,295 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general layout */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background: linear-gradient(135deg, #ff4e50, #f9d423);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #111;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo h1 {
+    font-size: 2.5rem;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f9d423;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://via.placeholder.com/1500x900');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 10rem 2rem;
+    color: #fff;
+    position: relative;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 8px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.hero-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+.cta-button {
+    text-decoration: none;
+    background-color: #f9d423;
+    padding: 1rem 2rem;
+    color: #111;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff4e50;
+}
+
+/* About Section */
+.about {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+/* Artist Lineup */
+.lineup {
+    padding: 4rem 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.lineup h2 {
+    font-size: 3rem;
+    color: #222;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.artist {
+    display: inline-block;
+    margin: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.artist img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.artist img:hover {
+    transform: scale(1.1);
+}
+
+.artist h3 {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: #222;
+}
+
+/* Ticket Section */
+.tickets {
+    padding: 4rem 2rem;
+    background-color: #ff4e50;
+    text-align: center;
+}
+
+.tickets h2 {
+    font-size: 2.8rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.ticket-options {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.ticket {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.ticket:hover {
+    transform: scale(1.05);
+}
+
+.ticket h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.ticket p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ff4e50;
+}
+
+/* Countdown Section */
+.countdown {
+    padding: 4rem 2rem;
+    background-color: #f9d423;
+    color: #333;
+    text-align: center;
+}
+
+#timer {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 2rem;
+}
+
+.timer-box {
+    background-color: #222;
+    padding: 1rem;
+    border-radius: 8px;
+    color: #fff;
+    width: 120px;
+    text-align: center;
+}
+
+.timer-box span {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+/* Contact Section */
+.contact {
+    padding: 4rem 2rem;
+    background-color: #222;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1rem;
+    color: #222;
+    transition: all 0.3s ease;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border: 2px solid #f9d423;
+}
+
+.contact button {
+    padding: 1rem 2rem;
+    background-color: #f9d423;
+    color: #111;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #ff4e50;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
